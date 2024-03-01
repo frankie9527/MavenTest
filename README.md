@@ -17,3 +17,10 @@ Inconsistent JVM-target compatibility detected for tasks 'compileDebugJavaWithJa
 ### doc
 https://developer.android.com/build/publish-library
 
+### 添加 jitpack.yml
+
+jdk:
+  - openjdk17
+
+开始添加到是 jdk11 ，然后报错 ，log 如下
+https://jitpack.io/com/github/Frankie9527/MavenTest/0.7/build.log
