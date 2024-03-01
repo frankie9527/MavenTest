@@ -31,12 +31,12 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
-    }
+//    publishing {
+//        singleVariant("release") {
+//            withSourcesJar()
+//            withJavadocJar()
+//        }
+//    }
 }
 
 dependencies {
@@ -54,7 +54,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.github.frankie9527"
                 artifactId = "com.demo.library"
-                version = "0.4"
+                version = "0.6"
                 from(components["release"])
             }
         }
